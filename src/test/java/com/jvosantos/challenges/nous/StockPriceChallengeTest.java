@@ -4,12 +4,12 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-public class SolutionTest {
+public class StockPriceChallengeTest {
 
-    Solution solution;
+    StockPriceChallenge solution;
 
     @Before public void Setup() {
-        solution = new Solution();
+        solution = new StockPriceChallenge();
     }
 
     @Test
