@@ -4,27 +4,25 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.jvosantos.challenges</groupId>
-    <artifactId>interview</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
-
-    <name>Interview Challenges</name>
-    <description>Challenges made by interviewers</description>
-    <url>http://jvosantos.com</url>
-    <inceptionYear>2015</inceptionYear>
+    <artifactId>parent-pom</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jar.finalName>interview-challenges</jar.finalName>
+        <java.version>1.8</java.version>
     </properties>
+
+    <modules>
+        <module>nous-stock-price</module>
+        <module>rupeal-factorial</module>
+    </modules>
 
     <developers>
         <developer>
             <id>vascosantos</id>
             <name>Vasco Santos</name>
-            <email>vasco.santos@inw-tech.com</email>
-            <organization>InnoWave Technologies</organization>
-            <organizationUrl>http://www.innowave-technologies.com/</organizationUrl>
+            <email>jvosantos@gmail.com</email>
             <roles>
                 <role>architect</role>
                 <role>developer</role>
@@ -49,20 +47,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.3</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>2.5</version>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <mainClass>com.jvosantos.challenges.InterviewApp</mainClass>
-                        </manifest>
-                    </archive>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
                 </configuration>
             </plugin>
         </plugins>

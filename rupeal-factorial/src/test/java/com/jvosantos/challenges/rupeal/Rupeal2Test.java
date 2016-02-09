@@ -8,7 +8,7 @@ public class Rupeal2Test {
 
     @Test(expected=IllegalArgumentException.class)
     public void testFactorialAnyNegativeNumber() {
-        new Rupeal2().fx(new Random(System.currentTimeMillis()).nextInt() * -1);
+        new Rupeal2().fx(-1);
     }
 
     @Test

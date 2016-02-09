@@ -25,7 +25,8 @@ public class StockPurchase {
         return sellingPrice - buyingPrice;
     }
 
-    @Override public boolean equals(Object o) {
+    @Override
+    public boolean equals(Object o) {
         if (this == o)
             return true;
         if (o == null || getClass() != o.getClass())
@@ -38,13 +39,15 @@ public class StockPurchase {
         return sellingPrice == that.sellingPrice;
     }
 
-    @Override public int hashCode() {
+    @Override
+    public int hashCode() {
         int result = buyingPrice;
         result = 31 * result + sellingPrice;
         return result;
     }
 
-    @Override public String toString() {
+    @Override
+    public String toString() {
         return "StockPurchase{" +
             "buyingPrice=" + buyingPrice +
             ", sellingPrice=" + sellingPrice +
