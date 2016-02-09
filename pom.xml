@@ -16,6 +16,7 @@
     <modules>
         <module>nous-stock-price</module>
         <module>rupeal-factorial</module>
+        <module>nous-game-of-life</module>
     </modules>
 
     <developers>
